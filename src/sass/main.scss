@@ -24,18 +24,6 @@
   'layout/navigation',
   'layout/footer';
 
-// 5. Components
-@import
-  'components/button',
-  'components/media';
-
-// 6. Page-specific styles
-@import
-  'pages/home';
-
-// 7. Themes
-@import
-  'themes/default';
 
 
 // how I un sub-moduled this boilerplate: https://stackoverflow.com/questions/1759587/un-submodule-a-git-submodule

@@ -1,16 +1,21 @@
 /**
  * Basic typography style for copy text
  */
-body {
-  color: $text-color;
+body, span {
+  color: $dark-grey;
   font: normal 125% / 1.4 $text-font-stack;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	color: $brand-color;
 	font-family: $text-font-stack;
+	font: 125%;
+}
+
+h1 {
+	font-weight: bolder;
 }
 
 h2, h3 {
-	font-weight: lighter;
+	color: $text-color;
 }

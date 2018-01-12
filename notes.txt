@@ -1,5 +1,4 @@
-application shell?	"home" controlled by Angular component simply named AppComponent
-
+https://angular.io/tutorial/toh-pt1
 
 
 generally aiming to be like libib or maybe library thing (for just myself, my household) but way, way prettier
