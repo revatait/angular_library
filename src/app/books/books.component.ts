@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../book';
+import { BOOKS } from '../sample-books';
 
 @Component({
   selector: 'app-books',
@@ -7,15 +8,15 @@ import { Book } from '../book';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
-	book: Book = {
-		id: 1,
-		name: 'Harry Potter and the Chamber of Secrets',
-		era: 'modern';
-	};
+	books = BOOKS;
+  selectedBook: Book;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSelect(book: Book): void {
+    this.selectedBook = book;
+  }
 }

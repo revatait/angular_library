@@ -2,3 +2,12 @@ application shell?	"home" controlled by Angular component simply named AppCompon
 cli to generate new component 	ng generate component ______s
 what does ng generate component ____s do?	creates a new folder in /app/ with four files: html, scss, spec.ts, ts
 what are the spec.ts files?	unit tests for your source files (Jasmine runs tests through Karma task runner)
+what is ngOnInit in the books.component.ts file?  lifecycle hook, a good place to put initialization logic
+what do you always have to do your components in their ts file? export
+what do pipes do in html files in Angular?  add styling for strings, currency, dates, etc, eg {{ book.title | uppercase}}
+where to add loops in angular list? <li>
+how to add loops to angular list? <li *ngFor='let book of books'>
+what do you call *ngFor?  a repeater directive
+
+
+syntax for adding sample books (json array stuffs)
