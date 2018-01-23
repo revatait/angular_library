@@ -8,6 +8,74 @@ what do pipes do in html files in Angular?  add styling for strings, currency, d
 where to add loops in angular list? <li>
 how to add loops to angular list? <li *ngFor='let book of books'>
 what do you call *ngFor?  a repeater directive
+atom set the column layout  alt + shift + [1-5]
+atom jump to column ctrl + [1-4]
+module  umbrella term for all the other "things" - an application level module plus all the little modules for components and whatnot
+directive a class responsible for creating, reshaping, and interacting with THML elements in the DOM ("Angular's most fundamental feature")
+What does Angular do when it finds a directive in an HTML template? it creates the matching directive class instance and gives the instance control over that portion of the DOM
+thee categories for directives  components, attribute directives, structural directives
+component a class responsible for exposing data to a view and handling most of the view's display and UI logic
+what is a component in its essence (two things) an Angular directive with a companion template
+you write Angular applications by? (3 things) composing HTML templates with Angularized markup, writing component classes to manage those templates, and adding application logic in service
+how do you launch an Angular app? by boostrapping the root module
+every angular app has at least one ngModule class, called?  the root module, conventionally named AppModule
+ngModules are essentially?  they're just modules! "Angular has its own modularity system called NgModules."
+ngModules are what exactly? a class with an @NgModule decorator aka a decorator function aka "a class decorated with @NgModule"
+decorators  functions that modify JS classes (@ signs)
+five most important properties of ngModule  declarations, exports, imports, providers, boostrap
+ngModule is a decorator function that takes?  a single metadata object whose properties describe the module
+declarations  the view classes that belong to a module
+three kinds of view classes components, directives, and pipes
+exports subset of declarations that should be visible and suable in the component tenants of other modules
+imports other modules whose exported classes are needed by component templates declared in a module
+providers creators of services that this module contributes to the global collection of services (they become accessible in all parts of the app)
+bootstrap the main application view that hosts all other app views
+bootstrap aka the root component
+Angular libraries installed and then what?  import parts of them with import: import { Component } from '@angular/core';
+how to import NgModules from Angular libraries? two steps, first same as any other JS import: import { BrowserModule } from '@angular/platform-browser'; then add it to the @NgModule metadata imports like so: imports: [ BrowswerModule ,
+what does a component control?  a patch of screen called a view
+what is a lifecycle?  a component has a lifecycle managed by Angular.
+what steps are in a coponents lifecycle?  Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys is before removing it from the DOM
+what are lifecycle hooks? something Angular offers to provide visibility into these key life moments and the ability to act when they occur
+what are classes in JS? primarily syntactical sugar over JS's existing prototype-based inheritance
+classes are in fact _________ special functions (even though they sort of act like objects)
+what is a function declaration? a function declaration defines a named function variable without requiring variable assignment; they occur as standalone constructs and cannot be nested within non-function blocks (they're siblings of variable declarations)
+how are function declarations like variable declarations? they require keywords (function and var)
+what is a function expression?  a function expression defines a function as a part of a larger expression (typically a var assignment)
+function expressions must NOT start with  function
+what does the extends keyword do? it creates a sub-class underneath an existing class
+to tell Angular that a component is in fact a component (and not just a class), you must  attach metadata to the classes
+how do you attach metadata to a class in TypeScript using a decorator
+what is a decorator?  a way to add both annotations and meta-programming syntax for class declarations and members
+what can decorators be attached to (5)? class declaration, method, accessor, property, or parameter
+syntax/form of decorators?  @expression, where expression must evaluate to a function that will be called at runtime with information about it
+within Angular's @Component() decorator, what three common configuration options can be included? selector (what HTML tag to use), templateUrl (what template to use), providers (array of dependencies for services sthis component requires)
+what is data binding? it is boilerplate push/pull logic for pushing data values into HTML and turning user responses into actions adn value updates
+data binding is a mechanism for connecting what two things? parts of a template with parts of a component
+four forms of data binding syntax (connecting DOM and Component)  {{value}}     [property] = 'value'     (event) = 'handler'     [(ng-model)] = 'property'
+Angular processes all data bindings how often?  once per JS event cycle (from the root of the application component tree through all child components)
+what are directives?  a class with a @Directive decorator
+relationship between @Directive and @component  a @Component is actually a simple @Directive decorator extended with template-oriented features (a component is a directive-with-a-template)
+three types of directives component, structural, and attribute directives
+what do structural directives do? they alter layout by adding, removing, and replacing elements in the DOM
+attribute directives alter the appearance or behavior of an existing element
+what are services in Angular? a broad category encompassing any value, function, or feature that your application needs - typically a class with a narrow, well-defined purpose
+relationship between services and components  component classes should be lean; they delegate specific tasks to specific services
+what is dependency injection mean?  its a way to supply a new instance of a class with the fully-formed dependencies it requires
+most dependences are  ______  services
+where do you include a components service dependencies? in its constructor
+what is an injector and what does it do?  it maintains a container of service instances that it's created and can create a new service instance from a provider
+what is Jasmine?  the jasmine test framework provides everything needed to write basic tests; it ships with an HTML test runner that exectutes tests in the Browser
+what is Karma?  the karma test runner is ideal for writing and running unit tests while developing the application
+
+
+
+
+
+
+
+
+
 
 
 syntax for adding sample books (json array stuffs)

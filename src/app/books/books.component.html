@@ -8,7 +8,4 @@
   </li>
 </ul>
 
-<div *ngIf='selectedBook'>
-  <h2> {{ selectedBook.title | uppercase }} </h2>
-  <div> <span> id: </span> {{ selectedBook.id }}</div>
-</div>
+<app-book-detail [book] = 'selectedBook'></app-book-detail>
