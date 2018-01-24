@@ -69,7 +69,7 @@ what is Jasmine?  the jasmine test framework provides everything needed to write
 what is Karma?  the karma test runner is ideal for writing and running unit tests while developing the application
 
 
-
+At Observable Data on page 6. Don't understand the content. But the app is fine.
 
 
 
