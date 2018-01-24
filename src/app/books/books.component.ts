@@ -12,7 +12,8 @@ export class BooksComponent implements OnInit {
   selectedBook: Book;
 
   getBooks(): void {
-    this.books = this.bookService.getBooks();
+    this.bookService.getBooks()
+      .subscribe(books => this.books = books);
   }
 
 	books:  Book[];

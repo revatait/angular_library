@@ -67,11 +67,12 @@ where do you include a components service dependencies? in its constructor
 what is an injector and what does it do?  it maintains a container of service instances that it's created and can create a new service instance from a provider
 what is Jasmine?  the jasmine test framework provides everything needed to write basic tests; it ships with an HTML test runner that exectutes tests in the Browser
 what is Karma?  the karma test runner is ideal for writing and running unit tests while developing the application
+Angular only binds to ______ component properties.  public
 
 
-At Observable Data on page 6. Don't understand the content. But the app is fine.
-
-
+to research
+public vs private
+Promises
 
 
 
