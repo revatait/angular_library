@@ -68,6 +68,7 @@ what is an injector and what does it do?  it maintains a container of service in
 what is Jasmine?  the jasmine test framework provides everything needed to write basic tests; it ships with an HTML test runner that exectutes tests in the Browser
 what is Karma?  the karma test runner is ideal for writing and running unit tests while developing the application
 Angular only binds to ______ component properties.  public
+two properties typical in an Angular route? a path (a string that matches the URL in the browser) and a component (the component that the router should create when navigation to this route)
 
 
 to research

@@ -14,6 +14,6 @@ export class BookService {
     return of(BOOKS);
   }
 
-  constructor(private messageService: MessageService) { }
 
+  constructor(private messageService: MessageService) { }
 }

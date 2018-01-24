@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Book } from '../book';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
+import { BookService } from '../book.service';
+import { Book } from '../book';
 
 @Component({
   selector: 'app-book-detail',
@@ -10,9 +13,15 @@ import { Book } from '../book';
 export class BookDetailComponent implements OnInit {
 
   @Input() book: Book;
-  constructor() { }
 
-  ngOnInit() {
+  constructor(
+    private route: ActivatedRoute,
+    private bookService: BookService,
+    private location: Location
+  ) { }
+
+  ngOnInit() void {
   }
+
 
 }
