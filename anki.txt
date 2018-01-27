@@ -12,3 +12,12 @@ RxJS
 
 
 syntax for adding sample books (json array stuffs)
+
+https://www.thepolyglotdeveloper.com/2017/03/javascript-libraries-in-a-typescript-application-revisited/
+https://www.thepolyglotdeveloper.com/2016/01/include-external-javascript-libraries-in-an-angular-2-typescript-project/
+
+All HttpClient methods return?  an RxJS Observable of something
+HTTP is what kind of protocol?  a request/response protocol - you make a request, it returns a SINGLE response
+How is an Observable from HttpClient different from other Observables?  An Observable from HttpClient emits a single value and then completes, never to emit again whereas generally Observables can return multiple values over time.
+What does HttpClient.get return?  the BODY of the response as an uptyped JSON object
+How can you add a type to HttpClient.get's result object? By applying the optional type specifier <Book[]>

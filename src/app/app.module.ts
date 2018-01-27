@@ -15,6 +15,8 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule }     from './app-routing.module';
 
+import { IsotopeModule } from 'angular2-isotope';
+declare var isotope: any;
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { AppRoutingModule }     from './app-routing.module';
     DashboardComponent
   ],
   imports: [
+    IsotopeModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,

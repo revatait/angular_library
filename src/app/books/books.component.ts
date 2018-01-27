@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Book } from '../book';
 import { BookService } from '../book.service';
+import { IsotopeModule } from 'angular2-isotope';
+
 
 @Component({
   selector: 'app-books',
@@ -21,3 +23,5 @@ export class BooksComponent implements OnInit {
     this.getBooks();
   }
 }
+
+/** https://www.npmjs.com/package/angular2-isotope **/
