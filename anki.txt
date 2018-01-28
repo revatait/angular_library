@@ -7,7 +7,7 @@ template literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 observables: https://angular-2-training-book.rangle.io/handout/observables/using_observables.html
 component interaction: https://angular.io/guide/component-interaction
 RxJS
-
+subscribe
 
 
 
