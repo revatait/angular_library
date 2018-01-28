@@ -37,12 +37,7 @@ export class BookService {
         tap(_ => this.log(`fetched book id=${id}`)),
         catchError(this.handleError<Book>(`getBook id=${id}`))
       );
-    }
-
-    save(): void {
-      this.bookService.updateBook(this.book)
-        .subscribe(() => this.goBack());
-    }
+    } 
 
     updateBook (book: Book): Observable<any> {
       return this.http.put(this.booksUrl, book, httpOptions).pipe (
@@ -51,25 +46,11 @@ export class BookService {
       );
     }
 
-    add(name: string): void {
-      name = name.trim();
-      if (!name) { return; }
-      this.bookService.addBook({ title } as Book)
-        .subscribe(book => {
-          this.books.push(book);
-        });
-    }
-
     addBook (book: Book): Observable<Book> {
       return this.http.post<Book>(this.booksUrl, book, httpOptions).pipe(
         tap((book: Book) => this.log(`added book with id=${book.id}`)),
         catchError(this.handleError<Book>('addBook'))
       );
-    }
-
-    delete(book: Book): void {
-      this.books = this.books.filter(b => b !== book);
-      this.bookService.deleteBook(book).subscribe();
     }
 
     deleteBook (book: Book | number): Observable<Book> {

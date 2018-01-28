@@ -2,25 +2,40 @@ import { Component, OnInit } from '@angular/core';
 
 import { Book } from '../book';
 import { BookService } from '../book.service';
-import { IsotopeModule } from 'angular2-isotope';
-
 
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.scss']
 })
+
 export class BooksComponent implements OnInit {
+
+  books:  Book[];
+
+  constructor(private bookService: BookService) { }
+
+  ngOnInit() {
+    this.getBooks();
+  }
+
   getBooks(): void {
     this.bookService.getBooks()
       .subscribe(books => this.books = books);
   }
 
-	books:  Book[];
-  constructor(private bookService: BookService) { }
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.bookService.addBook({ title } as Book)
+      .subscribe(book => {
+        this.books.push(book);
+      });
+  }
 
-  ngOnInit() {
-    this.getBooks();
+  delete(book: Book): void {
+    this.books = this.books.filter(b => b !== book);
+    this.bookService.deleteBook(book).subscribe();
   }
 }
 
