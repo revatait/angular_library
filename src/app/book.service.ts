@@ -37,7 +37,7 @@ export class BookService {
         tap(_ => this.log(`fetched book id=${id}`)),
         catchError(this.handleError<Book>(`getBook id=${id}`))
       );
-    } 
+    }
 
     updateBook (book: Book): Observable<any> {
       return this.http.put(this.booksUrl, book, httpOptions).pipe (
@@ -77,6 +77,16 @@ export class BookService {
 
     private log(message: string) {
       this.messageService.add('BookService: ' + message);
+    }
+
+    searchBooks(term: string): Observable<Book[]> {
+      if (!term.trim()) {
+        return of([]);
+      }
+      return this.http.get<Book[]>(`api/books/?name=${term}`).pipe(
+        tap(_ => this.log(`found books matching "${term}"`)),
+        catchError(this.handleError<Book[]>('searchBooks', []))
+      );
     }
 
 

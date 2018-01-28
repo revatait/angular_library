@@ -8,6 +8,7 @@ observables: https://angular-2-training-book.rangle.io/handout/observables/using
 component interaction: https://angular.io/guide/component-interaction
 RxJS
 subscribe
+async pipe
 
 
 

@@ -14,6 +14,7 @@ import { MessageService } from './message.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule }     from './app-routing.module';
+import { BookSearchComponent } from './book-search/book-search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppRoutingModule }     from './app-routing.module';
     BooksComponent,
     BookDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    BookSearchComponent
   ],
   imports: [
     BrowserModule,
