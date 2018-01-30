@@ -1,26 +1,16 @@
-ToDo
--- learn about research topics
--- build out some number of Book properties (simple + data validation ones)
--- link Book component with Author component
--- mockup wireframes and designs (sketches, Illustrator) - color scheme and typography
--- apply designs/build out Sass files
--- link in Isotope or other js design libraries
-
-
-generally aiming to be like libib or maybe library thing (for just myself, my household) but way, way prettier
-
-
 BOOK
 ======
 era			checkboxes**: prehistoric, ancient, medieval, renaissance, modern, contemporary, future
 category	fiction, nonfiction, reference*, kids fiction, kids nonfiction, baby
+medium		hardcopy, kindle, audiobook
+status		shelved, donated, borrowed, lent, sold, recommended
+position	currently reading, read, to read, wishlist***, abandoned, reference
+
+group
 genre		nested (five deep!)*
 topic		nested (five deep!)*
 geo			nested (five deep!), continent, country, region, state, city
-medium		hardcopy, kindle, audiobook
-group
-status		shelved, donated, borrowed, lent, sold, recommended
-position	currently reading, read, to read, wishlist***, abandoned, reference
+
 title
 author(s)
 summary
