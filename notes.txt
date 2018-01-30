@@ -1,4 +1,10 @@
-https://angular.io/tutorial/toh-pt1
+ToDo
+-- learn about research topics
+-- build out some number of Book properties (simple + data validation ones)
+-- link Book component with Author component
+-- mockup wireframes and designs (sketches, Illustrator) - color scheme and typography
+-- apply designs/build out Sass files
+-- link in Isotope or other js design libraries
 
 
 generally aiming to be like libib or maybe library thing (for just myself, my household) but way, way prettier
@@ -12,7 +18,7 @@ genre		nested (five deep!)*
 topic		nested (five deep!)*
 geo			nested (five deep!), continent, country, region, state, city
 medium		hardcopy, kindle, audiobook
-group	
+group
 status		shelved, donated, borrowed, lent, sold, recommended
 position	currently reading, read, to read, wishlist***, abandoned, reference
 title
@@ -42,7 +48,7 @@ blurb
 
 
  *  still not so sure how to deal with genres and topics. would love coding system. is reference a part of nonfiction? or its own genre? what about verse and drama? do you tuck Homer in with verse, fiction, or history? our shelves have always been by topic, not by genre.
- ** how to deal with prehistoric America - prehistory? medieval?
+ ** how to deal with prehistoric Americas - prehistory? medieval?
  *** can you number the wishlist? what about different users and different wishlists? nope - just me.
  **** this is read instance, because you can read a book more than once. it is not a book instance. because we should never own more than one of a book.*****
  ***** but what if we do own more than one of a book?

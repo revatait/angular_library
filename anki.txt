@@ -22,3 +22,12 @@ HTTP is what kind of protocol?  a request/response protocol - you make a request
 How is an Observable from HttpClient different from other Observables?  An Observable from HttpClient emits a single value and then completes, never to emit again whereas generally Observables can return multiple values over time.
 What does HttpClient.get return?  the BODY of the response as an uptyped JSON object
 How can you add a type to HttpClient.get's result object? By applying the optional type specifier <Book[]>
+
+
+difference between backticks (`) and single quotes (')  the backtick allows you to compose a string over several lines
+constructor (mdn def) a special METHOD for creating and initializing an object created within a class
+how many constructor methods can be in a class? just one (or you'll get SyntaxError)
+what's in a class's curly brackets? the "body" of the class, where you define methods and constructors
+let   allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used (this is unlike the var keyword)
+const   like a var except it cannot change through re-assignment; can't be redeclared
+similarity between const and let  they're block scoped (unlike var)

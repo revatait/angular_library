@@ -1,13 +1,13 @@
 /**
  * Basic typography style for copy text
  */
-body, span {
+html, body, span, div, button, p {
   color: $dark-grey;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 100% / 1.4 y;
 }
 
-h1, h2 {
-	color: $brand-color;
+h1, h4 {
+	color: $color-secondary-1-0;
 	font-family: $text-font-stack;
 	font: 125%;
 }
@@ -17,5 +17,5 @@ h1 {
 }
 
 h2, h3 {
-	color: $text-color;
+	color: $color-primary-0;
 }
