@@ -59,7 +59,7 @@ relationship between HTML attribute and DOM property? HTML attribute specifies i
 template binding works with ___ and ____, but not ____. Template binding works with properties and events, not attributes.
 when to write a template property binding?  when you want to set a property of a view element
 property binding sets the property to?  the value of a template expression
-most common property bindin and syntax example? sets an element property to a component property value, eg binding <img [src]='imageUrl'>
+most common property binding and syntax example? sets an element property to a component property value, eg binding <img [src]='imageUrl'>
 
 
 

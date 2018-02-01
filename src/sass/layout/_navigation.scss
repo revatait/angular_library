@@ -2,7 +2,7 @@ button {
   background-color: $color-secondary-1-1;
   color: white;
   border: none;
-  margin-bottom: 1rem;
+  margin: 1rem;
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
@@ -23,13 +23,14 @@ nav a {
   margin-top: 10px;
   display: inline-block;
   background-color: $color-secondary-2-4;
+  color: white;
   border-radius: 4px;
 }
 nav a:visited, a:link {
-  color: $color-secondary-2-3;
+  color: white;
 }
 nav a:hover {
-  color: $color-primary-2;
+  color: $dark-grey;
   background-color: $color-secondary-1-1;
 }
 nav a.active {
