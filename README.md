@@ -1,4 +1,4 @@
-This is another library app, in my year-long attempt to create my own personal (non-social)(but otherwise better)(and definitely prettier) version of Goodreads. (With just so much more care for UX.) The goal is to learn Angular a bit deeper as I go. See notes.txt for explanation of categories that doesn't belie the hours of research I've put into Library of Congress vs Dewey vs all the others I could find. See anki.txt for Angular vocabulary and concepts I want to understand and memorize.
+This is another library app, in my year-long attempt to create my own personal (non-social)(but otherwise better)(and definitely prettier) version of Goodreads. (With just so much more care for UX.) The goal is to learn Angular a bit deeper as I go. See notes.txt for explanation of categories that belies the hours of research I've put into Library of Congress vs Dewey vs all the others I could find. See anki.txt for Angular vocabulary and concepts I want to understand and memorize.
 
 
 ToDo

@@ -88,6 +88,4 @@ export class BookService {
         catchError(this.handleError<Book[]>('searchBooks', []))
       );
     }
-
-
 }

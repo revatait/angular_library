@@ -10,11 +10,12 @@ import { BookService } from './book.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { BookSearchComponent } from './book-search/book-search.component';
+import { BookFormComponent } from './book-form/book-form.component';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule }     from './app-routing.module';
-import { BookSearchComponent } from './book-search/book-search.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BookSearchComponent } from './book-search/book-search.component';
     BookDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    BookSearchComponent
+    BookSearchComponent,
+    BookFormComponent
   ],
   imports: [
     BrowserModule,

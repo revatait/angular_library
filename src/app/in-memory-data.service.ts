@@ -3,7 +3,16 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const books = [
-      { id: 10, title: 'Harry Potter and the Sorcerer\'s Stone' },
+      { id: 0,
+        title: 'Lincoln in the Bardo',
+        geo: [
+        {continent: 'North America', country: 'USA', city: 'Chicago'}
+      ]},
+      { id: 10,
+        title: 'Harry Potter and the Sorcerer\'s Stone',
+        geo: [
+          {continent: 'Europe', country: 'United Kingdom' }
+        ]},
       { id: 11, title: 'Harry Potter and the Chamber of Secrets' },
       { id: 12, title: 'Harry Potter and the Prisoner of Azkaban' },
       { id: 13, title: 'Harry Potter and the Goblet of Fire' },
