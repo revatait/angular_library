@@ -1,9 +1,9 @@
 <h3>Top Books</h3>
 <div class='grid-pad'>
   <a *ngFor='let book of books' class='card'
-    routerLink='detail/{{ book.id }}'>
+    routerLink='detail/{{book.id}}'>
     <div class='module book'>
-      <h4>{{book.title}}</h4>
+      <h4 class='book-title'>{{book.title}}</h4>
     </div>
   </a>
 </div>
