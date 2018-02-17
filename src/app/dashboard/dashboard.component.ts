@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../book';
 import { BookService } from '../book.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
