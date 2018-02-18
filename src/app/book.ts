@@ -61,6 +61,3 @@ enum position {
 }
 
 export const continents = ['Asia', 'Africa', 'Australia', 'Europe', 'North America', 'South America'];
-
-// working on line 20 above: trying to (a) set medium as optional and (b) set it as enum from medium list above
-// https://stackoverflow.com/questions/35923744/pass-enums-in-angular2-view-templates

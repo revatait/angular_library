@@ -10,6 +10,8 @@ export class BookFormComponent implements OnInit {
 
   constructor() { }
 
+  title = new FormControl();
+
   ngOnInit() {
   }
 
