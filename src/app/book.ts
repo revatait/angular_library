@@ -8,6 +8,15 @@ export class Book {
 	 status?: status;
 	 position?: position;
 	 geo?: Geo[];
+	 rating?: Rating[];
+}
+
+export class Rating {
+	1;
+	2;
+	3;
+	4;
+	5;
 }
 
 export class Geo {

@@ -1,1 +1,6 @@
 @import '~sass/main';
+
+div a {
+  font-family: $text-font-stack;
+  margin: .5rem;
+}

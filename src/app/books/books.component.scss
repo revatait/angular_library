@@ -1,13 +1,8 @@
 @import '~sass/main';
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .books, button {
   font-family: $text-font-stack;
-  list-style-type: none;
   a {
     color: $color-secondary-2-4;
     &visited {
@@ -18,10 +13,7 @@ ul {
 
   li {
     height: 2rem;
-    border: 2px solid $color-secondary-2-3;
     border-radius: 3px;
-    margin: 5px;
-    padding: 5px;
   }
 }
 

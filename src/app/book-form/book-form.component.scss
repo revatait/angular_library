@@ -1,2 +1,11 @@
 
 @import '~sass/main';
+
+div {
+  font-family: $text-font-stack;
+}
+
+input {
+  height: 2rem;
+  display: block;
+}
