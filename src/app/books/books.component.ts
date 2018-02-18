@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Book } from '../book';
 import { BookService } from '../book.service';
 
@@ -26,7 +25,7 @@ export class BooksComponent implements OnInit {
 
   add(title: string): void {
     title = title.trim();
-    if (!name) { return; }
+    if (!title) { return; }
     this.bookService.addBook({ title } as Book)
       .subscribe(book => {
         this.books.push(book);
