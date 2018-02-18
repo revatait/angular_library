@@ -29,3 +29,44 @@
 <input class="form-control" [formControl]="rating">
 </label>
 </div>
+
+<h2>Edit Book</h2>
+<form [formGroup]='bookForm' novalidate>
+  <div class='form-group'>
+    <label class='center-block'>Title:
+      <input class='form-control' formControlName='title'>
+    </label>
+
+    <label class="center-block">Subtitle:
+<input class="form-control" [formControl]="subtitle">
+</label>
+    <label class="center-block">Medium:
+<input class="form-control" [formControl]="medium">
+</label>
+    <label class="center-block">Category:
+<input class="form-control" [formControl]="category">
+</label>
+    <label class="center-block">Era:
+<input class="form-control" [formControl]="era">
+</label>
+    <label class="center-block">Status:
+<input class="form-control" [formControl]="status">
+</label>
+    <label class="center-block">Position:
+<input class="form-control" [formControl]="position">
+</label>
+    <label class="center-block">Geographic Location:
+<input class="form-control" [formControl]="geo">
+</label>
+    <label class="center-block">Rating:
+<input class="form-control" [formControl]="rating">
+</label>
+  </div>
+</form>
+
+<p>
+  Form Value: {{ bookForm.value | json }}
+</p>
+<p>
+  Form Status: {{ bookForm.status | json }}
+</p>

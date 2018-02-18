@@ -1,4 +1,9 @@
+https://angular.io/guide/reactive-forms#introduction-to-formbuilder
+up to MoreForm Controls on book-form.component.ts
+
+
 BOOK
+
 ======
 era			checkboxes**: prehistoric, ancient, medieval, renaissance, modern, contemporary, future
 category	fiction, nonfiction, reference*, kids fiction, kids nonfiction, baby
