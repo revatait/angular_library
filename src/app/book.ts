@@ -53,6 +53,7 @@ enum category {
 
 enum status {
 	'shelved',
+	'reading',
 	'donated',
 	'borrowed',
 	'lent',

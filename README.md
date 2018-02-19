@@ -2,12 +2,12 @@ This is another library app, in my year-long attempt to create my own personal (
 
 
 ToDo
-- [ ] add not working?
+- [x] add not working?
 - [ ] create new favicon
-- [ ] learn nested taxonomies
-- [ ] build out book properties (enum?)
+- [ ] learn nested taxonomies for book genres and geos
+- [x] build out book properties (enum?)
 - [ ] link Book class with Author class
 - [ ] redo/finish reasonable amount of sass
-- [ ] learn forms + add/update forms
+- [ ] learn forms + add/update forms #inprogress
 - [ ] learn connecting with database?
 - [ ] learn connecting angular app with marc records?

@@ -1,36 +1,5 @@
 <h2>Add New Book</h2>
 
-<div class='form-container'>
-  <label class="center-block">Title:
-  <input class="form-control" [formControl]="title">
-</label>
-  <label class="center-block">Subtitle:
-<input class="form-control" [formControl]="subtitle">
-</label>
-  <label class="center-block">Medium:
-<input class="form-control" [formControl]="medium">
-</label>
-  <label class="center-block">Category:
-<input class="form-control" [formControl]="category">
-</label>
-  <label class="center-block">Era:
-<input class="form-control" [formControl]="era">
-</label>
-  <label class="center-block">Status:
-<input class="form-control" [formControl]="status">
-</label>
-  <label class="center-block">Position:
-<input class="form-control" [formControl]="position">
-</label>
-  <label class="center-block">Geographic Location:
-<input class="form-control" [formControl]="geo">
-</label>
-  <label class="center-block">Rating:
-<input class="form-control" [formControl]="rating">
-</label>
-</div>
-
-<h2>Edit Book</h2>
 <form [formGroup]='bookForm' novalidate>
   <div class='form-group'>
     <label class='center-block'>Title:
@@ -38,29 +7,41 @@
     </label>
 
     <label class="center-block">Subtitle:
-<input class="form-control" [formControl]="subtitle">
-</label>
+      <input class="form-control" formControlName="subtitle">
+    </label>
+
     <label class="center-block">Medium:
-<input class="form-control" [formControl]="medium">
-</label>
+      <input type='radio' value='' name='medium' formControlName="medium">{{medium}}
+    </label>
+
     <label class="center-block">Category:
-<input class="form-control" [formControl]="category">
-</label>
+      <input class="form-control" formControlName="category">
+    </label>
+
     <label class="center-block">Era:
-<input class="form-control" [formControl]="era">
-</label>
+      <input class="form-control" formControlName="era">
+    </label>
+
     <label class="center-block">Status:
-<input class="form-control" [formControl]="status">
-</label>
+      <input class="form-control" formControlName="status">
+    </label>
+
     <label class="center-block">Position:
-<input class="form-control" [formControl]="position">
-</label>
+      <input class="form-control" formControlName="position">
+    </label>
+
     <label class="center-block">Geographic Location:
-<input class="form-control" [formControl]="geo">
-</label>
+        <select class="form-control" formControlName="geo">
+          <option *ngFor='let continent of continents' [value]='continent'>
+            {{continent}}
+          </option>
+        </select>
+    </label>
+
     <label class="center-block">Rating:
-<input class="form-control" [formControl]="rating">
-</label>
+      <input class="form-control" formControlName="rating">
+    </label>
+
   </div>
 </form>
 
